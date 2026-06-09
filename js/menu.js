@@ -1,6 +1,4 @@
-// Wait for DOM to load before running scripts
 document.addEventListener("DOMContentLoaded", function() {
-  
   // Menu filtering functionality
   const filterButtons = document.querySelectorAll(".btn-menu button");
   const menuItemsContainer = document.getElementById("menu-items");
@@ -35,41 +33,4 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
-  
-  // View Menu button functionality for modal
-  let viewMenuBtn = document.querySelector(".view-menu");
-  let modal = document.getElementById("menu-modal");
-  let closeBtn = document.querySelector(".close");
-  let modalMenuItems = document.getElementById("modal-menu-items");
-
-  // Only proceed with modal functionality if elements exist
-  if (viewMenuBtn && modal && closeBtn && modalMenuItems) {
-    // Open modal with visible menu items
-    viewMenuBtn.addEventListener("click", function() {
-      modalMenuItems.innerHTML = "";
-      
-      menuItems.forEach(item => {
-        // Only show items that are currently visible
-        if (item.style.display !== "none") {
-          const itemClone = item.cloneNode(true);
-          modalMenuItems.appendChild(itemClone);
-        }
-      });
-      
-      modal.classList.add("show");
-    });
-
-    // Close modal
-    closeBtn.addEventListener("click", function() {
-      modal.classList.remove("show");
-    });
-
-    // Close modal when clicking outside the modal content
-    window.addEventListener("click", function(event) {
-      if (event.target === modal) {
-        modal.classList.remove("show");
-      }
-    });
-  }
-
 });

@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nepali Ghar</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/59ee7f7742.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <header>
+    <!-- --------------------------------Header------------------------------------>
     <div class="container">
      <div class="header">
       <nav>
@@ -33,7 +36,11 @@
         </div>
       </div>
     </div>
+</header>
 
+
+<main>
+  <!-- -----------------------------about---------------------------------->
     <div id="about">
       <div class="about-content">
         <h2>Our Story - Nepali Ghar</h2>
@@ -45,6 +52,7 @@
       </div>
     </div>
     
+    <!-- --------------------------Menu--------------------------------->
     <div id="menu">
         <div class="menu-content">
           <h2>Our Menu</h2>
@@ -182,6 +190,149 @@
       </div>
     </div>
 
+<!---------------------------------------------------Gallery--------------------------------->
+      <div id="gallery">
+        <div class="gallery-content">
+          <h2>Gallery</h2>
+          <p>Discover the vibrant culture and delicious cuisine of Nepal through our gallery of images.</p>
+        </div>
+        <div class="gallery-images">
+          <img src="images/Entrance.png" alt="Gallery Image 1">
+          <img src="images/DiningArea.png" alt="Gallery Image 2">
+          <img src="images/Kitchen(preparation).png" alt="Gallery Image 3">
+          <img src="images/CulturalCorner.png" alt="Gallery Image 4">
+          <img src="images/DecorDetails.png" alt="Gallery Image 5">
+          <img src="image/dalbhatTarkari.png" alt="Gallery Image 6">
+        </div>
+      </div>
+
+
+<!-- -------------------------------------Contact----------------------------------->
+
+<div id="Contact">
+  <div class="contact-content">
+    <h1>Reservation & Contact</h1>
+    <p>Book your table or get in touch with us for any inquiries.</p>
+    </div>
+    <div class="contact-reservation">
+      <div class="contact-info">
+      <h2>Get in Touch</h2>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-crosshairs"></i>
+           <p><strong>Address:</strong> 123 Main Street, Kathmandu, Nepal</p>
+        </div>
+        <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+       <p><strong>Phone:</strong> +977 123-456-7890</p>
+       </div>
+
+       <div class="contact-item">
+       <i class="fa-regular fa-envelope"></i>
+       <p><strong>Email:</strong> nepalighar@gmail.com</p>
+        </div>
+
+        <div class="contact-item">
+        <i class="fa-regular fa-clock"></i>
+        <p><strong>Opening Hours:</strong> 10:00 AM - 10:00 PM</p>
+       </div>
+
+       <iframe class="map" loading="lazy" src="https://www.google.com/maps?q=Kathmandu,Nepal&output=embed"></iframe>
+    </div>
+
+    <div class="reservation-form">
+      <h2>Book a Table</h2>
+      <form id="reservation-form">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <div class="form-row">
+          <div>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+           
+      <div><label for="phone">Phone*</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+      </div>
+        </div>
+  
+        <div class="form-row">
+        <div> <label for="date">Date*</label>
+        <input type="date" id="date" name="date" required>
+       </div>
+
+       <div> <label for="time">Time*</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+       </div>
+       
+        <label for="guest">Number of Guests*</label>
+        <select id="guest" name="guest" required>
+          <option value="">Select</option>
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5">5 Guests</option>
+          <option value="6">6 Guests</option>
+          <option value="7">7 Guests</option>
+          <option value="8">8 Guests</option>
+          <option value="9">9 Guests</option>
+          <option value="10+">10+ Guests</option>
+        </select>
+
+        <label for="request" class="special-request">Special Requests</label>
+        <textarea id="request" name="request" placeholder="Any special requests?"></textarea>
+
+        <button type="submit">Submit Reservation</button>
+        
+      </form>
+</div>
+ </div>
+    
+</main>
+
+<footer id="footer">
+  <div class="footer-container">
+
+     <div class="footer-section">
+      <h3><strong>Nepali Ghar</strong></h3>
+      <p>Experience authentic Nepali flavors made with tradition and passion.</p>
+     </div>
+
+     <div class="footer-section">
+      <h3>Quick links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Reservations</a></li>
+      </ul>
+     </div>
+
+     <div class="footer-section">
+      <h3>Opening Hours</h3>
+      <p>10:00 AM - 10:00 PM</p>
+     </div>
+
+     <div class="footer-section">
+      <h3>follow us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+     </div>
+
+     <div class="footer-bottom">
+      <p>&copy; 2026 Nepali Ghar. All Rights Reserved.</p>
+     </div>
+
+  </div>
+</footer>
+
+        
     <script src="js/script.js"></script>
 </body>
 </html>

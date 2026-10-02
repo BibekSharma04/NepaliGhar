@@ -845,3 +845,18 @@ button{
 .footer-bottom p{
   color:#aaa;
 }
+
+@media (max-width:768px){
+  #footer{
+    padding:40px 20px;
+  }
+
+  .footer-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .social-icons{
+    justify-content:center;
+  }
+}
